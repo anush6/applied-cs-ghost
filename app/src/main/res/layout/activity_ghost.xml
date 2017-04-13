@@ -1,0 +1,67 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".GhostActivity"
+    android:id="@+id/ghost"
+
+    >
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="48sp"
+        android:id="@+id/ghostText"
+        android:text=" "
+       android:layout_margin="5dp"
+        />
+
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Starting game"
+        android:id="@+id/gameStatus"
+        android:layout_below="@+id/ghostText"
+        android:layout_margin="5dp"
+        android:textAlignment="textStart"
+        android:textColor="#808080"
+         />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/gameStatus"
+        android:gravity="center"
+
+        >
+
+        <Button
+
+            android:id="@+id/challengeBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            android:text="CHALLENGE"
+
+            />
+
+    <Button
+        android:id="@+id/reset_Btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_margin="10dp"
+        android:text="RESET"
+       />
+    </LinearLayout>
+
+</RelativeLayout>
+
+
